@@ -1,7 +1,7 @@
 FROM python:3.10.10-bullseye
 
 WORKDIR /app
-ADD src/* .
+ADD src/ .
 ADD requirements.txt .
 RUN pip install -r requirements.txt
 
