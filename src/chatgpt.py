@@ -29,7 +29,7 @@ class ChatGPTResponse(TypedDict):
 
 def get_chatgpt_response(messages: list[ChatGPTMessage]) -> ChatGPTResponse:
     response: ChatGPTResponse = openai.ChatCompletion.create(
-      model="gpt-4",
+      model=constants.CHAT_GPT_MODEL,
       messages=messages
     )
 
